@@ -2,7 +2,7 @@ class Vrun < Formula
   desc "Verilog workflow helper — compile, simulate, view waveforms, synthesize"
   homepage "https://github.com/enzomarioaiello/homebrew-vrun"
   url "https://github.com/enzomarioaiello/homebrew-vrun/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 ""
+  sha256 "29ae5b53b2e624c0c878e3690fe5ca4818ae0f3128e2aaf89f8f0b3397bbddaa"
   license "MIT"
   version "0.1.0"
 
