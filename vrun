@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # vrun — Verilog workflow helper
-# https://github.com/enzomarioaiello/homebrew-vrun
+# https://github.com/enzomarioaiello/vrun
 #
 # Usage:
 #   vrun sim    [file.v ...]   Compile and simulate
