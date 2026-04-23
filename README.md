@@ -9,8 +9,8 @@ A single CLI for compiling, simulating, and synthesizing Verilog on macOS.
 </p>
 
 <p align="center">
-  <a href="https://github.com/enzomarioaiello/vrun/releases"><img src="https://img.shields.io/github/v/release/enzomarioaiello/vrun?style=flat-square" alt="Release"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/enzomarioaiello/vrun?style=flat-square" alt="License"></a>
+  <a href="https://github.com/enzomarioaiello/homebrew-vrun/releases"><img src="https://img.shields.io/github/v/release/enzomarioaiello/homebrew-vrun?style=flat-square" alt="Release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/enzomarioaiello/homebrew-vrun?style=flat-square" alt="License"></a>
   <img src="https://img.shields.io/badge/platform-macOS-lightgrey?style=flat-square" alt="Platform">
   <img src="https://img.shields.io/badge/arch-Apple%20Silicon%20%7C%20Intel-blue?style=flat-square" alt="Architecture">
 </p>
