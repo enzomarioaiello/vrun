@@ -54,6 +54,7 @@ vrun doctor
 ## Quick start
 
 ```bash
+vrun new counter          # generate counter.v + tb_counter.v
 vrun sim                  # compile + simulate
 vrun wave                 # open waveforms in Surfer
 ```
@@ -67,6 +68,9 @@ vrun wave                 # open wave.vcd in Surfer
 vrun wave dump.vcd        # open a specific .vcd file
 vrun synth                # synthesize (testbenches auto-excluded)
 vrun synth top.v          # synthesize a specific file
+vrun new counter          # generate counter.v + tb_counter.v
+vrun new alu --no-tb      # generate only alu.v
+vrun new fifo --tb-only   # generate only tb_fifo.v
 vrun clean                # remove sim_out, wave.vcd, synth_out.v
 vrun all                  # run sim -> wave -> synth in one shot
 vrun doctor               # check all dependencies are installed
@@ -76,6 +80,8 @@ vrun help                 # show all commands
 ## Workflow
 
 ```
+    vrun new counter  ->  scaffolds counter.v + tb_counter.v
+         |
 Write .v files in your editor (Verible LSP)
          |
     vrun sim          ->  compiles + runs simulation
@@ -95,6 +101,18 @@ tb_counter.v    -> treated as testbench
 counter_tb.v    -> treated as testbench
 counter.v       -> treated as design (included in synthesis)
 ```
+
+## RTL generation
+
+Scaffold new modules and testbenches with `vrun new`:
+
+```bash
+vrun new counter            # creates counter.v and tb_counter.v
+vrun new alu --no-tb        # module only, no testbench
+vrun new fifo --tb-only     # testbench only (for an existing module)
+```
+
+Generated modules include a clock and active-low reset. Testbenches come pre-wired with `$dumpfile`/`$dumpvars` so `vrun sim` and `vrun wave` work immediately.
 
 ## Project config (`.vrun`)
 
